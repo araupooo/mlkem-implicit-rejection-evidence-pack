@@ -1,0 +1,259 @@
+harness=mlkem_ir_harness build=optimized liboqs=0.16.0 mode=battery alg=ML-KEM-1024
+utc_start=Tue Nov 10 22:53:20 2026
+keypair_seed=000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f
+encaps_seed=a0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf
+lengths: pk=1568 sk=3168 ct=1568 ss=32 keypair_seed=64 encaps_seed=32
+sizes_check: expected pk=1568 sk=3168 ct=1568 ss=32 -> OK
+pk_prefix32=4b94c29450111191823b3514c9ac1ea3d9825ccb86393a2dfb04654fa2192d37
+ct0=a92479dfaaab620558131ace92d73306737fe461286e40c4cd9fb9e3bd096cc44a8c95dd56a2533f658032d7e0194e7215f7c8e0a8348899623b00016cd92c4c9dc3a6b58a54b2b39791d5a34cb07a0f59c2b6de8dcbfe5db995be8f94a64218ed315e3f6f97812a951c606127bd3f2d9fa5f69f95511cbbd464104e33fa2c194cad30c4592c0c2b4685475b999530eb605f1632ac8bd585a10d1077e5e4c9251b4743ebeca6773fa6bcc0374d9ea4554a720b3804733ec9ce038885eea337bfe2ffaa4038bb0477b3483ada87d2a28134140bf24b0c2ffe5b41e1bd4c025dbb38e8abfb59f526dd88ac48167c7d531b91c4e5c2bab43728b6a5974e43e989a30dc430b78834f67fe181e8a58379054ba367eed1058f72464cdf3ac5738c725f5ad84102c4eb7bcfb8381df0d6dfc1eb4f0bc2b61b3fdd8e185f173746e63bc03cd1921d5ed8377284d0d1864eb22114e8afad0c7bd112cd2d6e3dc163c13fb53f40d239b254334faae954c92c061d4e421d5fbbffdf4d33b71d743ff3781bafc6578a8a1e0200f77057e5ed45f5baf48188d16de63e9bbf3cfbbe432d27e25faa4ccaf9434f281b993958aeb9fd109d8d57604318655f64e8a91682a0ba231ccaefd6d500c3e78657f9dc46e74ef6705f33340e589ceb679da6be3a8312222c4f38153337138c7c0f64c112a1e54c1446253f4faa956ab0a88ee230af7e680835fcf67e0c6f6a35b44a265ec2619351a356034f000e56061ebb5361a9cdb6817735b8f24013b56b0239f4bfe10fc05e3f27cd27c55f1e947c0d99be27cf716fcb2638add8fa410b905318cc094bf3def64f2a2970e9b8dcba29793c0bb50c6c9b3a549a2e5184c3a90b7938f0739d351befa57ed3cef00afe87db6a9026792a6ac512c0a2807b10d25aac97eb233cb1cf8d1a0b446ed9c43c30b7853e34fb41969b71af552cd100dff366902a2cc1503106b4606faa67ceb5367da9063abbeb91c7a895cfc0e4f6828037e5127dda9553400da294a0a2c9af9eaf9d6cb3fcc697e6b0ec683446d45f3b76c9b6512752b9fd8c3034250bbf06af613345e4a73d63f51702dcadc9a30b81557eb53f61440d89c1aafbd428e961a98ac43f342cc0e79a97f5749d841d58c060b480534c9b5ad8f93200c35bf957b868fc1440d98d678bac2bc9f46e29db8e1757c63cc4a1b0a2f9679b599fc27d8fdff1287f5d4be37a7ad6186d88f7a9bd0455f3dc873cf189aaaac45d3631ea7ed69fd8d5aef799c8b32581182a52cac768344117039dd8cce0b7e0c43a47f4011513e28ac9346678b06fb5c9eb7e14bd426e6ab8a6733cf8ab232dd89a5394c49502597d9331c7f9e871412867069036c2f8b5151704e7531b38ac88bb4d5eedb1b5f1b027f3a07a908ff05b247381d9253fd0a2006e35ef6b49fdf0595d0280ed100336e6fce9049440231eacb8a880bf59bb875b51a4480763824dbd7830df0374ba477163339588c333fc2ac79a51d25779bd6eca317a9ef6a3eeb96dd123ec4940e35cd7fa973dca0b50f3978c58813d736c842a892c03f4dcfc6920cab37d5b00b10e8e5b112af7ee1588abdd06caed5f237bb5215b1744d3e67252b2b81385e5a53b3bb48a72eb726255bac9e6f5dc9dfd591188a882e13832a5a01460052a73f55175760cdcafb5815a1f04e54581ebae9466a8f2c2939d9e38c0bcda4acb494f0f6388a8ee4b3f81f47a9b0ec71a036806d05e0968e2cd8d5e9ebb2fd6377d46d670cbb52609b4034054b1bca21c0f115e4e0ccdb642749c29b81b7d284352bf74e0d86e8f8bbb21f8e6ccbca5d6ad91417eb633ab26317da20e9ae187e11d4a2b523755f4789a7fc4083ad4ed2241a62bb04d21fcbba199e699130103c2210ab89228a82fe368b66f9712b6f2d32420873bbf4eb2a17eeab7d48cf27fdad0ae5b0c1c7d59342bc4f9f2292a9afccf87d04b671227f8fe7c9faf01e3580c94e6f7694d143e63525f8abeee6c5f2f34ba640e07a558516fc7625632e63b5e509a227223fb7e3aec5ad0e3bfdce71c92ece177edfec9607a10960d49acbaee139891c23384070bb9a894b202cb8b1b2a4b9f52eba0420e867a6fdb8f0a5688c3834f9f07e1c5acc59f5c2c6bc2213a82eac059b7dc297ca975bb46d86176e25d1604df56156ed11ba25b864ddbd627039eb14c0d087c7ea6f3e72cfa0c8472f2e4dff0
+K0_valid=eeaeab917518e0187011bc7bd691534c3dbc309c8a0748417cd30caaa579c7cd
+valid_decaps: rc=OQS_SUCCESS match_K=YES
+battery: n_invalid_unique=246 (random=200, deduped_inputs=6)
+INV 0000 kind=random #0 rc=OK det=OK neK=OK fallback=faa774e91b36d8dc54bd823cd8f6f84ad1e5307dcf9352d2ca245264dd36529e
+INV 0001 kind=random #1 rc=OK det=OK neK=OK fallback=bd863b468f4ae59866f3239676c6baeb8531589dac09b06095a2291733b760d6
+INV 0002 kind=random #2 rc=OK det=OK neK=OK fallback=c6d088c3fdf55b38104eec04bef5dc1c7bbd091f65e55baf0a4b4dcc563643fa
+INV 0003 kind=random #3 rc=OK det=OK neK=OK fallback=f0558c1796c5aecc422b42a9d4485b0f7692a01cb3cebe51d1d516e33df2f142
+INV 0004 kind=random #4 rc=OK det=OK neK=OK fallback=3fa4cb4ac9922e9192ef04fab703f25149c4b470dc9eaea46588107bbc705efa
+INV 0005 kind=random #5 rc=OK det=OK neK=OK fallback=335c63bd924bdb5e0a9a5a41bbb42decd0dbc8ba37b2c3ea32290607ca89c189
+INV 0006 kind=random #6 rc=OK det=OK neK=OK fallback=6b4a69cd0e619576a7a61abe80c49b6bd0eb3fe0db975f87f2a11f2aabc76753
+INV 0007 kind=random #7 rc=OK det=OK neK=OK fallback=75a95d598691d5efc881bbd63c6be1d759750e6f976baa8eb7b302b16fc5112e
+INV 0008 kind=random #8 rc=OK det=OK neK=OK fallback=60f0ae90525ef2b1004ee26478b76d16f28087d7417e7f2ee968d6239fb24f19
+INV 0009 kind=random #9 rc=OK det=OK neK=OK fallback=eddd192f301f74aa9a14fc89a474d11baa944e22e3356d6d7143db6ba386cf7b
+INV 0010 kind=random #10 rc=OK det=OK neK=OK fallback=300f77db6dcae5479f87e246d3fa5dae47506631a269b2b15340547a76acfa70
+INV 0011 kind=random #11 rc=OK det=OK neK=OK fallback=d93a74d140344556ef3909db1b792b22566bb91bccece95d8cf28827db650669
+INV 0012 kind=random #12 rc=OK det=OK neK=OK fallback=bb1926f2ea2e55afa805ee92f9c33eabab20e22a51057136f2bc66df89b7f44e
+INV 0013 kind=random #13 rc=OK det=OK neK=OK fallback=a1b51887c9c36f3be4ee2743f533b8c521f0ef208127d9197213edd1b748f014
+INV 0014 kind=random #14 rc=OK det=OK neK=OK fallback=4519860f82d86acb6be548ef9c7ed5b2e173d3497b6c7a06ec92bf16d19ca943
+INV 0015 kind=random #15 rc=OK det=OK neK=OK fallback=298fff6db4e9103babcc05e95d5fb0d0898a72fc91d1f15842367377c9a525b6
+INV 0016 kind=random #16 rc=OK det=OK neK=OK fallback=e4d13bbda966ca318ad5be5d50e840af89db0dc2a8ae0cf0f1a029b1f12b4458
+INV 0017 kind=random #17 rc=OK det=OK neK=OK fallback=58acd2d25dae2717e90e16ae0a17e03b16dea0455e868a563e6594d7494d418a
+INV 0018 kind=random #18 rc=OK det=OK neK=OK fallback=c15cdd37d5e4cf1f82b261ddd1545dda9134a15bd9cb04ddd4845b991bec77ac
+INV 0019 kind=random #19 rc=OK det=OK neK=OK fallback=247bc5a5c549b742036ced6bd0f850bbbf861b26132ab3310665747fdfc8fd6a
+INV 0020 kind=random #20 rc=OK det=OK neK=OK fallback=2f7e1d58d885fe161414bdae77d23c3c1e374763991c1828b5f53d435694fb85
+INV 0021 kind=random #21 rc=OK det=OK neK=OK fallback=6ad51cf1b6e3bfe2eba299b2aa475620aaf505e62f6ca2b011ea9dc7f9ea2c87
+INV 0022 kind=random #22 rc=OK det=OK neK=OK fallback=dd1ac57b53459c8e827d52c74b599354b9541e4ec036bc3f893d895fc8d4dccc
+INV 0023 kind=random #23 rc=OK det=OK neK=OK fallback=6126dbd1ccf328a443b2d296c5582c08d59138282e0fec659d40677f7a2d30da
+INV 0024 kind=random #24 rc=OK det=OK neK=OK fallback=69ec8adab7a586077da1c58c16e9e58749c4b6b6eb5aac3a3fcb2ee274c42088
+INV 0025 kind=random #25 rc=OK det=OK neK=OK fallback=79297f87627de54b44abd5725b3cc1d7d361aef5fa7ad82c4ac54a8eeeac5b83
+INV 0026 kind=random #26 rc=OK det=OK neK=OK fallback=5d75a8b44127e77029034c30e583ce2df9447c28624d1cbbd4d1604476229865
+INV 0027 kind=random #27 rc=OK det=OK neK=OK fallback=fafbf9e16745a07cdf059d2864e9ae4e6bb563614f4d03f54a7f2f2598288d64
+INV 0028 kind=random #28 rc=OK det=OK neK=OK fallback=f5be7ac1314bb6a1213cef06fdcab1551923b5569bdfe19ec3069aa0a2263a3a
+INV 0029 kind=random #29 rc=OK det=OK neK=OK fallback=7bbad42b7649de19fe27e7e4711d14bbcec9e6728e91896b5480e256b800ea80
+INV 0030 kind=random #30 rc=OK det=OK neK=OK fallback=3e98d063c1a9370c816843ca279e1b4fb7873c5b8ca93b5012c8ff2ad2b7ba43
+INV 0031 kind=random #31 rc=OK det=OK neK=OK fallback=213429992b20859813f736d3c57140b996b6f909bd8218c50dc00c60bbd3e285
+INV 0032 kind=random #32 rc=OK det=OK neK=OK fallback=77978073346118e7beb87eac8d49d190b22c4d26db12b56db51385cf22f7f737
+INV 0033 kind=random #33 rc=OK det=OK neK=OK fallback=8199e7fb2eefd89d2c231e1875d2e0020e32c6086ef41c88536b1d106dec48e2
+INV 0034 kind=random #34 rc=OK det=OK neK=OK fallback=a50d3f707b306f87aead570518939efef7430208ac0cd272b5954ff9a6ff5f55
+INV 0035 kind=random #35 rc=OK det=OK neK=OK fallback=573c0d174f56bdb7e224e377d577ec86d5e41fcbc3a61fd34e23c4812c13f985
+INV 0036 kind=random #36 rc=OK det=OK neK=OK fallback=a218bb08d57ddf505f97848b7e37c236dfa190cebe617932a1085ee91b32dad5
+INV 0037 kind=random #37 rc=OK det=OK neK=OK fallback=1dc32edff201feea189f9ffabbfb2834d4ea476c7174d1bbc950b0bcf2ea57d8
+INV 0038 kind=random #38 rc=OK det=OK neK=OK fallback=1a66e8a20bbed789a4cf9485ac0e980b6f95102b45e010d01253a260c8c9a1ea
+INV 0039 kind=random #39 rc=OK det=OK neK=OK fallback=f38a477f68b0a0c1de3314d304636f8c8678ce64e741a96686b7fcba8c39d648
+INV 0040 kind=random #40 rc=OK det=OK neK=OK fallback=099dcd48ecfb0f1f0e2429b19512a4ddc2028a6dafe3672e3ef872b956409a63
+INV 0041 kind=random #41 rc=OK det=OK neK=OK fallback=b8f61a173e524dd3aedaadeb950424a5cc261bff2a21f612c5503c3f15ddcb7c
+INV 0042 kind=random #42 rc=OK det=OK neK=OK fallback=19bba1b62aff7e5aed1ea7b049753ecdcd0a1a4fd7347e6196abc2095b4dc695
+INV 0043 kind=random #43 rc=OK det=OK neK=OK fallback=6f3b0cc08b3dff73ea7e7bf131c1441d4dc01f1102a964417376088f6e00ff51
+INV 0044 kind=random #44 rc=OK det=OK neK=OK fallback=01d0b0f3d228bc4d5e94e25ba14b1f6cdfe73ead433f81cf9aaf0a11a748bfb1
+INV 0045 kind=random #45 rc=OK det=OK neK=OK fallback=012f90aba9c8a2f6327e76ab61a30d00dd9e23dc1b649176f47832c408663ceb
+INV 0046 kind=random #46 rc=OK det=OK neK=OK fallback=480673b92531e6d7bfc2c5d0984199b8bfd6c73df90e12f845c5a39d3e2e16ed
+INV 0047 kind=random #47 rc=OK det=OK neK=OK fallback=f366b5fa9eb2d2120721029c10a287800ee31674bc9f071834a2bdd50fd9d425
+INV 0048 kind=random #48 rc=OK det=OK neK=OK fallback=46ab92c33d1cbba37f03515e38e5f740940f32fb98a1ea0f5465423e9ad39fb2
+INV 0049 kind=random #49 rc=OK det=OK neK=OK fallback=3e558b54e838d1e24a7a7d51705f95f19f32eb89a88682502e1362fdf011e53f
+INV 0050 kind=random #50 rc=OK det=OK neK=OK fallback=178ca29753c1511fc416510dc9a12205ab3c8086bf17706becf756648c59c086
+INV 0051 kind=random #51 rc=OK det=OK neK=OK fallback=9eef79f9ee666f4cf64b1080181fa37c359beb6f7fef5e0979daf953f43d3d85
+INV 0052 kind=random #52 rc=OK det=OK neK=OK fallback=db740f11ad5525bfdbafa476b72b537f61d1b5ed8bf91e07d6a1e39dd3bb8d7d
+INV 0053 kind=random #53 rc=OK det=OK neK=OK fallback=80f873735e2ee442d9b3f81f0fb6e1fb9cc5bf786743f440a4c84f6f9577d226
+INV 0054 kind=random #54 rc=OK det=OK neK=OK fallback=acc4a6c5546e341a2c5e94263a493764290001c5ce0d89542112225973be722e
+INV 0055 kind=random #55 rc=OK det=OK neK=OK fallback=921162658e6c929cc16098db0eef516859126d7ebbc897e1ffc1ba609df8b517
+INV 0056 kind=random #56 rc=OK det=OK neK=OK fallback=745a656e0e3053c8fdfda759a4eaa995a622a4f1fed7abd8d7449dbe6087698f
+INV 0057 kind=random #57 rc=OK det=OK neK=OK fallback=4a2718a2425e493bc5be6965b7fb6ccaf3c2fc5ca8850ff028d4a32b0b6c93a4
+INV 0058 kind=random #58 rc=OK det=OK neK=OK fallback=371ccf6be4c270889d0d28062bf96f3f2e8ee8b5db2aeca58dcdfbbe63257f8d
+INV 0059 kind=random #59 rc=OK det=OK neK=OK fallback=36b8107d39475c4b152e2d9106dde58c0bb5c7dd65ed2e0f8107860d528f0179
+INV 0060 kind=random #60 rc=OK det=OK neK=OK fallback=0e194be11193e6b1a94f9b4dbe75e96dd4992a31d04cded5a3ab4132bc09eb6f
+INV 0061 kind=random #61 rc=OK det=OK neK=OK fallback=b0ec7669d8b856449100a333fc7b0ea9d8f3bd91b160abced3e1ce386954ce09
+INV 0062 kind=random #62 rc=OK det=OK neK=OK fallback=13b7b289be39dd4f295d7acfdd1dd1ff183b3b8a18f564d148d7ee05070c1f99
+INV 0063 kind=random #63 rc=OK det=OK neK=OK fallback=a4264123e0615c0cad0a6cc3d92533ac767b8d00a5be64539ec9c3f8bd2cb7ce
+INV 0064 kind=random #64 rc=OK det=OK neK=OK fallback=456859b38b551b500a72b78d6ca2f605b004415045e33219e82ed3e057ec7aba
+INV 0065 kind=random #65 rc=OK det=OK neK=OK fallback=b1bd27d26cbdb7e091b5e665f866d3a570af3008ecd022feee903e9452857d0d
+INV 0066 kind=random #66 rc=OK det=OK neK=OK fallback=71e462d695e77a1817301f28ece0014d52a6f6dfa0dbc5607bc7297303a91bf1
+INV 0067 kind=random #67 rc=OK det=OK neK=OK fallback=14a809012ebd769e78fd4c5817467093a0cef66aa97855082cbfa9c9714ad17c
+INV 0068 kind=random #68 rc=OK det=OK neK=OK fallback=926bf96f3f037fb34a13f45088dc8f25d735c96e4947d74bb43071c781a9974f
+INV 0069 kind=random #69 rc=OK det=OK neK=OK fallback=7d6351395c6be98ba4cd293ee4680e344308608ca11b3d93b79dc1546e56bce4
+INV 0070 kind=random #70 rc=OK det=OK neK=OK fallback=a98b7e33a930232c2c86045e04e5cb8896d5dba6f5615f45928b637de26bf1d9
+INV 0071 kind=random #71 rc=OK det=OK neK=OK fallback=bacb496281f65c5f918e1d92982f09b176e947a9ad225715557e800768456902
+INV 0072 kind=random #72 rc=OK det=OK neK=OK fallback=4d404cfc45d892f38b5aab1a5e21f1d53b5449e41d40b73119eda5c963cab83a
+INV 0073 kind=random #73 rc=OK det=OK neK=OK fallback=beb5726c4df7aec6350667bbe62fa11d2868d59ea941472828a8913c6db0dc63
+INV 0074 kind=random #74 rc=OK det=OK neK=OK fallback=96c77635dd56dae4eb6aabe0904b4ae4fcf1404d4f7b5d3299ba01252efcf782
+INV 0075 kind=random #75 rc=OK det=OK neK=OK fallback=8f86795a147bd76dd9cda39af177f93876272878e92b42a087f5103f0de1db28
+INV 0076 kind=random #76 rc=OK det=OK neK=OK fallback=26beadead58d6b3d00577a80b11553072a59491c6a44c08604b12b14b47661b1
+INV 0077 kind=random #77 rc=OK det=OK neK=OK fallback=5b951020e52c1a4e46fe19c0593154b19d9470e49f6f91b39f5ffde28d71e8c8
+INV 0078 kind=random #78 rc=OK det=OK neK=OK fallback=509648dc8aa2c7dd9666b55ee5b2d05149737fd9217ae4aec85794e0f58b0b0c
+INV 0079 kind=random #79 rc=OK det=OK neK=OK fallback=27e7713bf9a9cc20c0955bb06cbeb8abe364034695db8cead41ecb864ad82519
+INV 0080 kind=random #80 rc=OK det=OK neK=OK fallback=63405dc4b95564af577a29242e7f57d025a73560895a978488dea1fa9b01ef63
+INV 0081 kind=random #81 rc=OK det=OK neK=OK fallback=b3027695b614d8944c763ee210cd2f11534668c754b12c8d5205f2a7196081ec
+INV 0082 kind=random #82 rc=OK det=OK neK=OK fallback=c9580fef6bfe06985dfb12f7a2eb877b0cfea147d8794598c19a85750765cd97
+INV 0083 kind=random #83 rc=OK det=OK neK=OK fallback=72d4e9466265eda769fe8166dedd5954e260b1065e04636058e998e2044414cb
+INV 0084 kind=random #84 rc=OK det=OK neK=OK fallback=84a6345fdbd73432838a56bc60a503b4c5db6dbd2c54808ee43cc2f16fbed653
+INV 0085 kind=random #85 rc=OK det=OK neK=OK fallback=36c1db53536d2d9de90c66ae9f606fab5fd304d936cab53fcb99f8bb5abad89c
+INV 0086 kind=random #86 rc=OK det=OK neK=OK fallback=9bbf40ac9806dff234184891be00703de76ab0b22987cce377bd3ce70ba5feeb
+INV 0087 kind=random #87 rc=OK det=OK neK=OK fallback=36e1ba7068392edf01b246e80f5dcd80c27effb87ce6e4b2e8d2c093d5e12c23
+INV 0088 kind=random #88 rc=OK det=OK neK=OK fallback=67bbd75003147ae6b7b5af26217fd6d8928a34bd663fbd72631581adb0d93ad3
+INV 0089 kind=random #89 rc=OK det=OK neK=OK fallback=9a68d9cb150c4f9f8f74f968ca7bf99353e11b6e2f2f6bccb8342932f33c5b60
+INV 0090 kind=random #90 rc=OK det=OK neK=OK fallback=00dda1606659bd09a4d7620ef6ba5b66c7513e7d720a61df8316facac4f2f848
+INV 0091 kind=random #91 rc=OK det=OK neK=OK fallback=b56b501721939aacca3531a5f76881e14670ce01f3be83870600087cdd1d07dd
+INV 0092 kind=random #92 rc=OK det=OK neK=OK fallback=549e5639936ab768e9210c05bff31e7b30df3d28fd693c51a6d10da62c68462c
+INV 0093 kind=random #93 rc=OK det=OK neK=OK fallback=bb8de5a8a9789a4db81cf88484d616c10044bf831261fa4082ffd54170872f62
+INV 0094 kind=random #94 rc=OK det=OK neK=OK fallback=c3b77af09323b6a114cb07423673479d4d4a5ac0c9dfbcd032d7547bf4be88a3
+INV 0095 kind=random #95 rc=OK det=OK neK=OK fallback=fa12560b6f1bf040844230003bf8eac3f8bd37e0f50f07d986ba7c326c9e27da
+INV 0096 kind=random #96 rc=OK det=OK neK=OK fallback=edffbfb0c380aa536b9fe9ef728668747422595c984032df19a3372b05a7f4e3
+INV 0097 kind=random #97 rc=OK det=OK neK=OK fallback=0ef4a336da811ff5802cfcde4372952aa7e2e4ed1be3c3719e907e8cda2c0aaf
+INV 0098 kind=random #98 rc=OK det=OK neK=OK fallback=f718907f08af8641141e08c76717dbb73ddcd5b1e5a3e4115149ca7767cdd2de
+INV 0099 kind=random #99 rc=OK det=OK neK=OK fallback=bc32e28889f45893f81f6af93ab081129d41af2d9d11a423b0210225001c0967
+INV 0100 kind=random #100 rc=OK det=OK neK=OK fallback=f46df37ba6add4ce8c18f7ebfc338e343b36c783021202b0fec6c4ab7836367b
+INV 0101 kind=random #101 rc=OK det=OK neK=OK fallback=bcf8664e65c5e4e8defd6857c2d902ba4dee96c92af87216058614526fec0fc9
+INV 0102 kind=random #102 rc=OK det=OK neK=OK fallback=32042041b782df6af57453c0ae4d53ec3b1f4d659d20d9c112d27c7d815b2df0
+INV 0103 kind=random #103 rc=OK det=OK neK=OK fallback=b18b9b2217907726578ff10ea9973f2581ca4128df47b99cad24f257bce98d35
+INV 0104 kind=random #104 rc=OK det=OK neK=OK fallback=d54d5f5e67afcd9e7a633eddaa1b953ea34273440b2220ff8f6b2346f0304184
+INV 0105 kind=random #105 rc=OK det=OK neK=OK fallback=9ad3e12054381329efc9ad7d118d9234022b6968c1bce2cac3f8c48c5e353559
+INV 0106 kind=random #106 rc=OK det=OK neK=OK fallback=c136a903e57adac6100faa017d52974823b1330809f6d5fc64960528b29aaf92
+INV 0107 kind=random #107 rc=OK det=OK neK=OK fallback=dcf703518708afb589801c3e11462cd11e2d2c3608eeb78df6803efd6056133d
+INV 0108 kind=random #108 rc=OK det=OK neK=OK fallback=6d6e37b5e87dfa6c653ba7939e2e411887c11fc4369dd560094adf7f89a0b06e
+INV 0109 kind=random #109 rc=OK det=OK neK=OK fallback=87e9836138077fbf9e2cdf08475c6f7d0f97e2be2270dec3a3b6d4ec12e830a9
+INV 0110 kind=random #110 rc=OK det=OK neK=OK fallback=93987e2bf61acbc49f37b841a3d225e7836008fc459f54d0c1f88ffe865f03cc
+INV 0111 kind=random #111 rc=OK det=OK neK=OK fallback=42bef7854f1ee70288ecae81fecb52678e16dc7be48c459e337fe4b2dc7669dd
+INV 0112 kind=random #112 rc=OK det=OK neK=OK fallback=ed37135bb9c101ded76721023fb203e42bd830458a84254f380566a19a340c2c
+INV 0113 kind=random #113 rc=OK det=OK neK=OK fallback=7578018bb55541710f0e96d95157e069ed70d89670333a3cffa42557cea335fc
+INV 0114 kind=random #114 rc=OK det=OK neK=OK fallback=ec60cdf2c298bfc33d5192fe37a896e56fbc83c5638b84d416af66d050a4f826
+INV 0115 kind=random #115 rc=OK det=OK neK=OK fallback=8f40b9249fc3d804ef0da5ddc23ad7dd3cc95b75a368877d0f7dee1419275e49
+INV 0116 kind=random #116 rc=OK det=OK neK=OK fallback=ca5392492ee90f2c93f8354afa865e2b30b87fcea0319320212961e3c8f19ba7
+INV 0117 kind=random #117 rc=OK det=OK neK=OK fallback=ee335f88d437cf5432002a834b96b24b1d3f0b114e8d3a5b566257a9108c20c9
+INV 0118 kind=random #118 rc=OK det=OK neK=OK fallback=df0f250fa2be2d213d5d6f8059036b98ef0c5064d5e728cee731234ebfefe9ae
+INV 0119 kind=random #119 rc=OK det=OK neK=OK fallback=8a926429e25e0b65e25a941efbc6a9bb8032987ae61faf1df15b75f528e00876
+INV 0120 kind=random #120 rc=OK det=OK neK=OK fallback=2fda6b6ac2d031263e1931557396ee2813ba4814c78959d64256ec56c519fe85
+INV 0121 kind=random #121 rc=OK det=OK neK=OK fallback=12ddfbbaf1daf41747d607d2ff6a77655588594f0801f3454e3a8228459b340c
+INV 0122 kind=random #122 rc=OK det=OK neK=OK fallback=2e60f1f09bcc968fc3d174fda2636d2b32c3ce0e6ab359d77533d97e049608cc
+INV 0123 kind=random #123 rc=OK det=OK neK=OK fallback=0bc27b153c0705020d1cf9a1e527777ed2511015e1d6561a22c0f715953467c8
+INV 0124 kind=random #124 rc=OK det=OK neK=OK fallback=9d34eb554470bfcf29c629e6b9697c712a76858a2106949f19d7c7e7a371f15b
+INV 0125 kind=random #125 rc=OK det=OK neK=OK fallback=62e57bbace93ba15f8b3a55687fa3e20f4048856542cac57f920342cba20d18c
+INV 0126 kind=random #126 rc=OK det=OK neK=OK fallback=d3aa35319fa1a18b6a51ece8ffa4886570e5469e4619404660c4f268baf2a68d
+INV 0127 kind=random #127 rc=OK det=OK neK=OK fallback=c668f97e2f8804d58a1471878bb105f7a454d925f8db422a0accf2c222beb8e2
+INV 0128 kind=random #128 rc=OK det=OK neK=OK fallback=8183984df53f6f2794b66609aca98c4d767164eb3de2a9aba76bc681aae82290
+INV 0129 kind=random #129 rc=OK det=OK neK=OK fallback=301d98a98f97cb96e93d77bd3061aa8dba08437de71e49c2d5d8545062ed21ab
+INV 0130 kind=random #130 rc=OK det=OK neK=OK fallback=90058e4c2960e7e58565f92972a3d8b6444310c594d32fd1075c3565bb163d86
+INV 0131 kind=random #131 rc=OK det=OK neK=OK fallback=a6375f82ad5b959145022ce56cd9c75fb5ae2acf269513e97512c63b531cec98
+INV 0132 kind=random #132 rc=OK det=OK neK=OK fallback=84e2415a2c6e433ac0758d9fddda4a806d8f17758fe050c527f9ea9f378ef9b6
+INV 0133 kind=random #133 rc=OK det=OK neK=OK fallback=eb1d8645cd98c0c09764cbdd0d7256aab238cdceb6dbced6e5a77a819dcf692e
+INV 0134 kind=random #134 rc=OK det=OK neK=OK fallback=e03b7c037619f65fc66a2c392f15c086a3ba1284a311ff57605830bfa2e79baa
+INV 0135 kind=random #135 rc=OK det=OK neK=OK fallback=6f0af65676a30ce5ca8d8baaab8647b27b05d22be73b37fd23438ccef40f4761
+INV 0136 kind=random #136 rc=OK det=OK neK=OK fallback=4d747ce5a2d827dc8053d58f8c31e878ab0163b8d8f96fdfe1966a6eaff91070
+INV 0137 kind=random #137 rc=OK det=OK neK=OK fallback=b6e2b0eb6aae748c8b2d8c1f2c21ca58b94e50680f66af9a231cef92c52f292f
+INV 0138 kind=random #138 rc=OK det=OK neK=OK fallback=f48421d77bf5753276f1ce1f0d3a7f47f8295a57dc6947b7c7ba360390ffee4e
+INV 0139 kind=random #139 rc=OK det=OK neK=OK fallback=4b79ed6e4d8cb05db6f0b88e4c7945c0dae10a3e30b326510d58f6ea76cb7e2d
+INV 0140 kind=random #140 rc=OK det=OK neK=OK fallback=ad5721aa3fe7adc01f3ec254d3bb3a7f4cff99259b7de26207d725475d1b300e
+INV 0141 kind=random #141 rc=OK det=OK neK=OK fallback=32e75d933bf8826ea1ae1c1c936e7bd43efa6385f545e3a12666f0a481f90878
+INV 0142 kind=random #142 rc=OK det=OK neK=OK fallback=2f9f49b8112bbd80685d1c3ace6951b5b8e991def558676912fd382b60033f6f
+INV 0143 kind=random #143 rc=OK det=OK neK=OK fallback=883fef0fe5c7e30a655890e3870fb7f3a308fd229552707ba133a206e8101500
+INV 0144 kind=random #144 rc=OK det=OK neK=OK fallback=84e80ec752ccb7081d86c26b7db80daaec892eb200ee29730b747642414ae9e9
+INV 0145 kind=random #145 rc=OK det=OK neK=OK fallback=e060e28755a62c0618307f4b76dd5dbcd9db8f722653b269af4c53675d6819dc
+INV 0146 kind=random #146 rc=OK det=OK neK=OK fallback=a1ef04d48976f1a794c34dcd07c886b5fe5918ed630934846ead3f16ec9f25fc
+INV 0147 kind=random #147 rc=OK det=OK neK=OK fallback=d872a3288e18622d2ce4d5ac25bf5ef91479ae29c583a693c4718aa314fdd4fc
+INV 0148 kind=random #148 rc=OK det=OK neK=OK fallback=0c623fe5952792580c7b2d732234c341d2a0cbc38836ad347cccc73420b9fad7
+INV 0149 kind=random #149 rc=OK det=OK neK=OK fallback=2544ee8ddc5814fe1dfc3739ef306c19d8b69c4d02032386dd470b7a92a479cf
+INV 0150 kind=random #150 rc=OK det=OK neK=OK fallback=f6f2dafd5d3c1e13efd697303a021945a52b737186035b3b4856a8747d9473ca
+INV 0151 kind=random #151 rc=OK det=OK neK=OK fallback=76709687d9a670d8077b5c8d88e0c124631f804a38b7471e1aae21cd378a2ef2
+INV 0152 kind=random #152 rc=OK det=OK neK=OK fallback=baa6554ac560f400e1f797f6a684ed4f9b69a7b741ebe97829df4a9c509aa4a9
+INV 0153 kind=random #153 rc=OK det=OK neK=OK fallback=014a154b10a44d246f120017669df6648bd5646f9762adfdb2a2294f94d40a26
+INV 0154 kind=random #154 rc=OK det=OK neK=OK fallback=48fcbbb7b6f9d8154ab07b060a04fcbc3167bce03a80e9f64a86c9e10fd35d13
+INV 0155 kind=random #155 rc=OK det=OK neK=OK fallback=d77dfb620bb926d85467abd1a8d25f9ebdb56f7a53a56037dd13b332237151d1
+INV 0156 kind=random #156 rc=OK det=OK neK=OK fallback=0c7e446f56d6553b02ddf1b96641a1987c768f9f5b863efafc21b5945bff1e4e
+INV 0157 kind=random #157 rc=OK det=OK neK=OK fallback=4dc5b115f9cecabcaa14c76b32b493fb7dfd85bce965ae3e30a6634d090a12a8
+INV 0158 kind=random #158 rc=OK det=OK neK=OK fallback=91099c6ff5b83425df721c17582f4fc7116b0f93fccd1b6756a32749c582842d
+INV 0159 kind=random #159 rc=OK det=OK neK=OK fallback=ca623ad7d662bc138909a3f591596db62a619e892537b6ee4edc32672e6e1c62
+INV 0160 kind=random #160 rc=OK det=OK neK=OK fallback=129094606ec9c1a0648d0bcaac8b7698950f5b8eb7fcbf9067233db4d77d9d74
+INV 0161 kind=random #161 rc=OK det=OK neK=OK fallback=388ef5147e6703e5253070e8854c32202dfce0c8f853a4bb22a6da52536e43fd
+INV 0162 kind=random #162 rc=OK det=OK neK=OK fallback=3e3ac408d0bbc8472af67a5565345e2106fc32fa3e60b9eb33f9165d30437567
+INV 0163 kind=random #163 rc=OK det=OK neK=OK fallback=91528527a76158adc0f7e9d883266a32038c836b647d216bbfa2bd97e346f412
+INV 0164 kind=random #164 rc=OK det=OK neK=OK fallback=317c026fffb2633a5a5fb84fbde7dde49ddcd06f409616a7124a5c9ae9f480ee
+INV 0165 kind=random #165 rc=OK det=OK neK=OK fallback=7f850fb8955aea8697ec3a949a766e300da9114a3ff1c9de3062eedb164b2582
+INV 0166 kind=random #166 rc=OK det=OK neK=OK fallback=9e95e520577b83adfdaa710a2cc9f082a4e7e768b1f5f708bc4243a5779889a2
+INV 0167 kind=random #167 rc=OK det=OK neK=OK fallback=93f5505e037dae899c4d66802340ca6703b19b5213ce2ee6834ba190621d8dc6
+INV 0168 kind=random #168 rc=OK det=OK neK=OK fallback=4faa39d6a7f33e8856fa8c121f0304ff51e03822d089fb672760bd4596272c1f
+INV 0169 kind=random #169 rc=OK det=OK neK=OK fallback=ebf27de3f6d6f7209fd53e8a8e27ed95121e32e619d5eadad22fc9787be42ec1
+INV 0170 kind=random #170 rc=OK det=OK neK=OK fallback=5c22138b19d1acd25e59bfc0ca84a05163511aa5900056832563d6e58f5344cf
+INV 0171 kind=random #171 rc=OK det=OK neK=OK fallback=b5768eca2f48b28b7071bbd58850fc402dcbe170a0127a04f470732782722d2c
+INV 0172 kind=random #172 rc=OK det=OK neK=OK fallback=9002a58dc2583e2ab909c69600039329203b4ae7452b223cbdb7f865ed15f54f
+INV 0173 kind=random #173 rc=OK det=OK neK=OK fallback=8c9c8910c39ea7523f3dbd2fea244a439f32159a18292d33b043d653ddc19ebe
+INV 0174 kind=random #174 rc=OK det=OK neK=OK fallback=87fddfe36d21ac77534c920bd6888050b5bf1c835b3bcd9225e642df5cb5e9b1
+INV 0175 kind=random #175 rc=OK det=OK neK=OK fallback=a146d9a8d096fd598776ff3456aad9ce0f7e404e7875a247e5afd9f190235b63
+INV 0176 kind=random #176 rc=OK det=OK neK=OK fallback=903ba68b40e93bb4c17b10e1d841253d31a02823068e2eddfb987a714972524c
+INV 0177 kind=random #177 rc=OK det=OK neK=OK fallback=58830eab1d46b75a948b8a14eaa370e227bb4193d258baeb09b98d719faf98c9
+INV 0178 kind=random #178 rc=OK det=OK neK=OK fallback=2335743531bb325bf256a9340ac4449b4a22e914aa77a4e2a73d843fb10ce54e
+INV 0179 kind=random #179 rc=OK det=OK neK=OK fallback=1575e27af74a5ae23b0ee5fe11b1b82035411f3b8e8a0a5435fbedcce7b44bb9
+INV 0180 kind=random #180 rc=OK det=OK neK=OK fallback=933e1d02211a7e0117e4c2508adacd5436f7109790fb2d99e82f07e58902beed
+INV 0181 kind=random #181 rc=OK det=OK neK=OK fallback=bf6b58814bda0fd7b71a1710f8d200560ca20503f4189e51ebd55ef5d6cca410
+INV 0182 kind=random #182 rc=OK det=OK neK=OK fallback=78450eb3c87a32cb8acc36f0969046b61a097b915c882899f64857f33685b7a3
+INV 0183 kind=random #183 rc=OK det=OK neK=OK fallback=b9a48d3f9678e3b0082e36e64f1ef2f5771b343f3ff26c56a19af7a044dbe8b3
+INV 0184 kind=random #184 rc=OK det=OK neK=OK fallback=bef485bede591e807ce5918d0e8dac5496754ae5ef377b94d04f3d7b45d1e607
+INV 0185 kind=random #185 rc=OK det=OK neK=OK fallback=84a8f7fe2f7211de50dfa60863f51d230387fd6d4e1e7edf434082c11615bcf2
+INV 0186 kind=random #186 rc=OK det=OK neK=OK fallback=d3a80e9572e9d5bf8e856cdca2b1aca3a39fb9964ed2c2609f009bc914424a36
+INV 0187 kind=random #187 rc=OK det=OK neK=OK fallback=d0d4e50a5c4c10332d697ff6c18424e4a6dd080b0f80d061d2e27b1a16c14128
+INV 0188 kind=random #188 rc=OK det=OK neK=OK fallback=98a0df6ba9fc7ddc15cee245d23d82a63d6b07a37630b1b9a95176c42086484a
+INV 0189 kind=random #189 rc=OK det=OK neK=OK fallback=9390e788e19c56b52b6d841265a19177203d045ffcf13da156573217d65721d7
+INV 0190 kind=random #190 rc=OK det=OK neK=OK fallback=2f654e748872a473bc0c94f75df3c4e1c8751775f0d1d4ae177b3e18cab495bb
+INV 0191 kind=random #191 rc=OK det=OK neK=OK fallback=d03196103def19cd9dafafec47ce5b61171357277fef34ccdbb53855e5e710f6
+INV 0192 kind=random #192 rc=OK det=OK neK=OK fallback=6d0b35f3029b9144a070eca0d8d4c42bc6846cf18c5a91d0bce0165e95af4ae6
+INV 0193 kind=random #193 rc=OK det=OK neK=OK fallback=0fa70f24b793936dc53fa105fadac92184667527fa7e62178cdb40b404ccfa29
+INV 0194 kind=random #194 rc=OK det=OK neK=OK fallback=629795a371a1333c492dc12f3f3de4a05ef81dba5b0adb0012165739aeaa0ca4
+INV 0195 kind=random #195 rc=OK det=OK neK=OK fallback=4f6e3c28b4c71ffc0e95e57ed5b7a50482c776811387fa4f6e7fcd1334bb1e4f
+INV 0196 kind=random #196 rc=OK det=OK neK=OK fallback=86de3d1669b51c75ffff2e041db550f688573947f17eb5a29f31afbf71cc70b7
+INV 0197 kind=random #197 rc=OK det=OK neK=OK fallback=29aad137e641ea684fb36f3a1c587199018621672abf49e9e78281b60e831357
+INV 0198 kind=random #198 rc=OK det=OK neK=OK fallback=9a0c1d5b97353aa835c6f85f8689c860d91bd7d71a9786cb4352cc049ac70d6a
+INV 0199 kind=random #199 rc=OK det=OK neK=OK fallback=85ff03dfdbf75edff3d19ae486c5ed1a280ab5617e62617b9f72ec087d881910
+INV 0200 kind=1bit byte=0 bit=0 rc=OK det=OK neK=OK fallback=19dd7c3ebae93edf0306a4dbf17a1d7731f61883c8191196941d33679b205720
+INV 0201 kind=1bit byte=0 bit=7 rc=OK det=OK neK=OK fallback=fd1dbc7b851c9799cdc867b9d96723a21c416cb71445d3df733d103f9f2e91eb
+INV 0202 kind=1bit byte=1 bit=0 rc=OK det=OK neK=OK fallback=c9181b9283969031f207d4c38946e4e7c1f6cc9e7ea34993441f2c225526fb22
+INV 0203 kind=1bit byte=1 bit=7 rc=OK det=OK neK=OK fallback=898e737d8bff4de65c2ed1ae0f3b92973cc36d50a28cfb54f7f0bb34bf2a4f6d
+INV 0204 kind=1bit byte=2 bit=0 rc=OK det=OK neK=OK fallback=8ebaf81617f9b7ab2785f6e88229fa9df58d852ba2a9477dbf93c919dd4a69e7
+INV 0205 kind=1bit byte=2 bit=7 rc=OK det=OK neK=OK fallback=4d0900b7092780ba47c63428086c445c4cd7cf1e425a72d285e9be4215b897e4
+INV 0206 kind=1bit byte=3 bit=0 rc=OK det=OK neK=OK fallback=f6ca292a8ec3f7bb5c32b616719549543a7bf001b543a0de816e77a9b59d35c5
+INV 0207 kind=1bit byte=3 bit=7 rc=OK det=OK neK=OK fallback=20269dee5903ccaf360b43693de1fe0fbda9e49fa6f05791301cb2dbbd4d007e
+INV 0208 kind=1bit byte=7 bit=0 rc=OK det=OK neK=OK fallback=0967c17fdffa9b3ec65a40e884f1edadd09a62c5e09235d5c8baa49f2fdc0037
+INV 0209 kind=1bit byte=7 bit=7 rc=OK det=OK neK=OK fallback=c544eb93b89268de82de7ad1047c8537dff36ce3936c0897f0d63282274b901c
+INV 0210 kind=1bit byte=15 bit=0 rc=OK det=OK neK=OK fallback=3c5a98dd8cfd7ceae9cd77132b104b09ad0e2d1fb391ab32eb3efb9f0f06e820
+INV 0211 kind=1bit byte=15 bit=7 rc=OK det=OK neK=OK fallback=85632d9fdeb49b915360695393dd80df22a108d79ea542567b42fd1286914270
+INV 0212 kind=1bit byte=31 bit=0 rc=OK det=OK neK=OK fallback=7ce02ebbabfd5e851c89626302c3ad30531e4b9f507b3d4de9665f0f21dfa18b
+INV 0213 kind=1bit byte=31 bit=7 rc=OK det=OK neK=OK fallback=519181f31b620a6119af51149efff4137482de5f6ef1e3d83fbb3c824639ee3c
+INV 0214 kind=1bit byte=63 bit=0 rc=OK det=OK neK=OK fallback=8ed10fc151f8acf53fc970533e78c1f66b764dd472ed41fddfd6c2a054988054
+INV 0215 kind=1bit byte=63 bit=7 rc=OK det=OK neK=OK fallback=7feb7421c210ba5421f6dbf1710d6a8af1a26d7a9b4b5ca83619c5719d8a9305
+INV 0216 kind=1bit byte=127 bit=0 rc=OK det=OK neK=OK fallback=dd3c7e8d4f04f52ab975271e9547f66a4cd50e9c018044a72daddee184fbc09c
+INV 0217 kind=1bit byte=127 bit=7 rc=OK det=OK neK=OK fallback=ed5b6e33d48116c023631fbbd53afe88d1eec2c6fe5636450ad1b2861b732d55
+INV 0218 kind=1bit byte=255 bit=0 rc=OK det=OK neK=OK fallback=8d872b5d291ce07b02a98a1417c48f5a2d6d1d05c4ba71087dce2f1782368c1a
+INV 0219 kind=1bit byte=255 bit=7 rc=OK det=OK neK=OK fallback=9ba1d098af9f87ac21a2523b2ddbf64430e70e13a6e2911ba7674a652440478e
+INV 0220 kind=1bit byte=511 bit=0 rc=OK det=OK neK=OK fallback=4ff0fce5cb8e2990d8f6f4fb2c29c97c8852e1fc26a819e0c48902222da9d0cc
+INV 0221 kind=1bit byte=511 bit=7 rc=OK det=OK neK=OK fallback=af1da984b86002998c3728e8d8eb727a3213faab57e60c368e0b9c1fe71cbede
+INV 0222 kind=1bit byte=784 bit=0 rc=OK det=OK neK=OK fallback=5909e74bce8909bc832e16d8fb6736afea1a7f9fc3c25cda47a7a0f7c823cf24
+INV 0223 kind=1bit byte=784 bit=7 rc=OK det=OK neK=OK fallback=c01947302e261c8f1710de647e76fdd424a7a8f37e572878d60f261f21561926
+INV 0224 kind=1bit byte=1565 bit=0 rc=OK det=OK neK=OK fallback=2123ea588fbb19773f4645806f5c72c7a6e2b5821712e848576a2d320949452b
+INV 0225 kind=1bit byte=1565 bit=7 rc=OK det=OK neK=OK fallback=cd894a67e786e4ff377f3df0fe4ff35390c89e9b144d68f0b28572f2625abb6c
+INV 0226 kind=1bit byte=1566 bit=0 rc=OK det=OK neK=OK fallback=7d409c7a544cf9021baf1d5fcd588824f89f31db630fbaac4049cbaf8660084f
+INV 0227 kind=1bit byte=1566 bit=7 rc=OK det=OK neK=OK fallback=026ccf092aa024515f70bde38945669e4eecf616c93adb53ef5c559d227e05a3
+INV 0228 kind=1bit byte=1567 bit=0 rc=OK det=OK neK=OK fallback=85a13ec5f980700733fb30fa5a45dd6b6dd4263dadbe5ceb9e5497e36aefbc0a
+INV 0229 kind=1bit byte=1567 bit=7 rc=OK det=OK neK=OK fallback=1a4b10cdf210e4d82e1217c2a2e4ed4fcce59ee310e521579589916b3112f98e
+INV 0230 kind=1bit byte=4 bit=0 rc=OK det=OK neK=OK fallback=f9f43f1b055cbc51a40f3ad2614bcb4fe765dc5bd9fd9b5a01cb7877e6d275f7
+INV 0231 kind=1bit byte=5 bit=0 rc=OK det=OK neK=OK fallback=559d094720b0b6b6a335f89d3d89e73860714a0d735a30d1bf1e9f6c912a9c8d
+INV 0232 kind=1bit byte=6 bit=0 rc=OK det=OK neK=OK fallback=aa6db527f05d5f595d6d016679d5f20752505573f7004cac568865f78fdc9a8c
+INV 0233 kind=1bit byte=8 bit=0 rc=OK det=OK neK=OK fallback=6772533209b0e8b2ac8c451df6096e3ed8a5851aef3546076aaa688adef92e5a
+INV 0234 kind=1bit byte=9 bit=0 rc=OK det=OK neK=OK fallback=8d271b5eb623d724e5392db01c0bf45540b4859772bb6d0f041c314acfb1832b
+INV 0235 kind=1bit byte=10 bit=0 rc=OK det=OK neK=OK fallback=3f0b4c7923afcc88d77bc5c4069377faefdf56e834ffc5ea104c035e70be633d
+INV 0236 kind=1bit byte=11 bit=0 rc=OK det=OK neK=OK fallback=8be3cb32f5f5fbff2b1ae3bac3ea63daf7b87629fca9abac1ef49fb1831cd9cf
+INV 0237 kind=1bit byte=12 bit=0 rc=OK det=OK neK=OK fallback=099e5b2ea0e6cc1628695d81ff9aa310fc7b998fc1231168d39ce1bfa6386ac1
+INV 0238 kind=1bit byte=13 bit=0 rc=OK det=OK neK=OK fallback=74cc2aaa2ab3b949eb1a6bf2fdfb18dd88756a8e7da9dad85d210475ed6c6dc3
+INV 0239 kind=1bit byte=14 bit=0 rc=OK det=OK neK=OK fallback=12f1c435c4b63d03f85d61ffab5673d92974c627251bf6a8bca9d2052c86c0a1
+INV 0240 kind=multibit byte0=0xFF rc=OK det=OK neK=OK fallback=b0dec5223f818281744ca80a02161c464fe759e39511cdc90da82b129d2f6646
+INV 0241 kind=multibit bytes100-107=0xFF rc=OK det=OK neK=OK fallback=985b9251f12f658c49cb723de346c114ec7b931fffec8892f8bdeca9ee5bc7d4
+INV 0242 kind=multibit 8 scattered bits rc=OK det=OK neK=OK fallback=92d247a69cb5426fac9c6702033ff11e9fbfd8842552e2b76b6da17147881127
+INV 0243 kind=multibit first+last byte 0xFF rc=OK det=OK neK=OK fallback=1b2935dcf35404159c737937c8cd05f632b945cc43debd80b806b60cdc5fba51
+INV 0244 kind=all-zero rc=OK det=OK neK=OK fallback=294cb5b6b0f37a047745a2a69991f66ac85936e1b077e717eaeb26bb0ba42c68
+INV 0245 kind=all-0xFF rc=OK det=OK neK=OK fallback=d515b463f9b15624303e04c2c5429ac7980f9af04a10e80cc569615127c781ae
+battery_summary: n=246 rc_fail=0 det_fail=0 eqK=0 dup_pairs=0
+RESULT: PASS battery ML-KEM-1024 n=246

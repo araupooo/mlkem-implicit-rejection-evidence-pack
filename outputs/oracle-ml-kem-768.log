@@ -1,0 +1,259 @@
+oracle=explicit_rejection TEST-ORACLE-ONLY not-a-real-implementation
+oracle_semantics: return error and no shared secret for any ct != valid ct (explicit rejection; forbidden by FIPS 203 7.3)
+oracle alg=ML-KEM-768 liboqs=0.16.0
+utc_start=Tue Nov 10 22:56:14 2026
+keypair_seed=000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f
+encaps_seed=a0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf
+pk_prefix32=298aa10d423c8dda069d02bc59e6cdf03a096b8b3da4cab9b80ca4a14907672c
+ct0=de8df69f8b171cf4f73b67350bd6aa88161a924c52e502119f637c1e2d6186addfcb326f135e60995450a4583ba4ed8fd88d936bca4794610d9e1a4777fa8686f7a8185e99394ad3d804f9200b09c899405b6ed2c913ead319b8a0125bbc28c7f6a2332fba6287197a2a594d76f95e0575b6f2800c0ae71e55954318994896f3e65f03bfda5e05616d2785c0bc51dca5a5107ee2e6bd534fc9cd61825bbab03aa7364270fe2f2d76502977d86505d038d69c04a31e0427fce1f35c0d3ea7029e64043d4d9c285d0c17a7de9b7811c9fcb7ae5c60096c837a530d156e653fe85cd52b976406e0a47876b7bc1d168b5cc6a78b8125d2a3f1870ae29f6e1c7aa1e3b87fc4147b5feb5c09bb52098db3cf62c5a2131dbab63a5593df6d7fc06f628eedc6fba9d47abaad74f0a44d18fd2f677566eee2792fa4e864cbef906985a72ffbdc0fb52cd57d37c5fb7ae822472264ad9022d1c4ab60e45f6781d126211069bb4211314f4a0f96ca5fd4b5f410730c81abd1e94ddd5f0ae35b7a186dcb9d7ef54d7919b1e020067fc090d26b84f771c702787684e2840c3b987f44084477466368528f81cb4fae33d859b7eacf4cb535bac262ff6997a43ca9f65ce8d113ebbbd07fb351622341249591fed826e3e2b24759d73c4a5519a668710e3884f333a0f61819e5e3421f1b16933155cc8c97126c00587884a4127eaf96cfeca419d7ac349adfb2ecbea3acb9891173053353dca653ef5d1c6c4fbaaf59465994320955fe6b86595fb403d002b411f8d0ec716f1a8e304b2b0dd3957aaafdc677b68af63b62a81aa87e68c19d50ecfff54fd645e664a28575187b010622b5dd2df19683ab7b46c90db15eaf6be38135bc17c08f6cc4a4dfddd1cc8b06b01099e44995caea4f2581655a550801665067fd46fa0f54055b5818a19cc9137cb3cc46297a30e0df511180430ae934c23caa1bd71b0e7339a17b88884ec3e03d4eded1c63246d0c754961ff2eaa5deecbeff8cf871fb496e355ad0b240a7b97e3e04996f0fb7dc4b45bf1789190530b4845b212ab20117cd2c5c141990d4212c07778c09b3c336ed05adb2f32f48cfdfb6a3181a917c2d278f4da58ba9465d4ae24e91faf37ca85409a502f997e0f14833967c78b6eb9412a4f9ae8a04b9453aad899f4e783ee5f06e7b22cf40e998ddabf49739678393e3d1138b9c30ff3d61bcb118ff16fc291219f3b011750e3dad8fe651b90d02b857bb46382e86b3d3239fbb1a9214b975807d688867e9011dc016640f63184cc39a5ac18728c429323121b57d18132f5cafd25bb4976ddaec033357d35a88d613f4653b2621db5aabfe70121dac232d980dc38acb93e7abb5d4fae0cd054a6229efa11700bd9f5750874cdec31e35bcc665dc0ef15eb893435a512165feb08b6b45d187406165532d3ca2dac022015c994eee652fe348469e0e3929e79ffca8c280de63e51a1e7f380f4bfa513608a1e2ec0084570bc8df620d8c5d665a355632d8f79b7b1e951ed2755626ac1151
+K0_valid=d4ab9572cd7c68df84854e27a7ddbfc54f89c74cd96d93fa1db660275420153b
+valid_decaps: rc=OK match_K=NO
+battery: n_invalid_unique=246 (random=200, deduped_inputs=6)
+INV 0000 kind=random #0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0001 kind=random #1 rc=ERROR criterion_32byte_secret=FAIL
+INV 0002 kind=random #2 rc=ERROR criterion_32byte_secret=FAIL
+INV 0003 kind=random #3 rc=ERROR criterion_32byte_secret=FAIL
+INV 0004 kind=random #4 rc=ERROR criterion_32byte_secret=FAIL
+INV 0005 kind=random #5 rc=ERROR criterion_32byte_secret=FAIL
+INV 0006 kind=random #6 rc=ERROR criterion_32byte_secret=FAIL
+INV 0007 kind=random #7 rc=ERROR criterion_32byte_secret=FAIL
+INV 0008 kind=random #8 rc=ERROR criterion_32byte_secret=FAIL
+INV 0009 kind=random #9 rc=ERROR criterion_32byte_secret=FAIL
+INV 0010 kind=random #10 rc=ERROR criterion_32byte_secret=FAIL
+INV 0011 kind=random #11 rc=ERROR criterion_32byte_secret=FAIL
+INV 0012 kind=random #12 rc=ERROR criterion_32byte_secret=FAIL
+INV 0013 kind=random #13 rc=ERROR criterion_32byte_secret=FAIL
+INV 0014 kind=random #14 rc=ERROR criterion_32byte_secret=FAIL
+INV 0015 kind=random #15 rc=ERROR criterion_32byte_secret=FAIL
+INV 0016 kind=random #16 rc=ERROR criterion_32byte_secret=FAIL
+INV 0017 kind=random #17 rc=ERROR criterion_32byte_secret=FAIL
+INV 0018 kind=random #18 rc=ERROR criterion_32byte_secret=FAIL
+INV 0019 kind=random #19 rc=ERROR criterion_32byte_secret=FAIL
+INV 0020 kind=random #20 rc=ERROR criterion_32byte_secret=FAIL
+INV 0021 kind=random #21 rc=ERROR criterion_32byte_secret=FAIL
+INV 0022 kind=random #22 rc=ERROR criterion_32byte_secret=FAIL
+INV 0023 kind=random #23 rc=ERROR criterion_32byte_secret=FAIL
+INV 0024 kind=random #24 rc=ERROR criterion_32byte_secret=FAIL
+INV 0025 kind=random #25 rc=ERROR criterion_32byte_secret=FAIL
+INV 0026 kind=random #26 rc=ERROR criterion_32byte_secret=FAIL
+INV 0027 kind=random #27 rc=ERROR criterion_32byte_secret=FAIL
+INV 0028 kind=random #28 rc=ERROR criterion_32byte_secret=FAIL
+INV 0029 kind=random #29 rc=ERROR criterion_32byte_secret=FAIL
+INV 0030 kind=random #30 rc=ERROR criterion_32byte_secret=FAIL
+INV 0031 kind=random #31 rc=ERROR criterion_32byte_secret=FAIL
+INV 0032 kind=random #32 rc=ERROR criterion_32byte_secret=FAIL
+INV 0033 kind=random #33 rc=ERROR criterion_32byte_secret=FAIL
+INV 0034 kind=random #34 rc=ERROR criterion_32byte_secret=FAIL
+INV 0035 kind=random #35 rc=ERROR criterion_32byte_secret=FAIL
+INV 0036 kind=random #36 rc=ERROR criterion_32byte_secret=FAIL
+INV 0037 kind=random #37 rc=ERROR criterion_32byte_secret=FAIL
+INV 0038 kind=random #38 rc=ERROR criterion_32byte_secret=FAIL
+INV 0039 kind=random #39 rc=ERROR criterion_32byte_secret=FAIL
+INV 0040 kind=random #40 rc=ERROR criterion_32byte_secret=FAIL
+INV 0041 kind=random #41 rc=ERROR criterion_32byte_secret=FAIL
+INV 0042 kind=random #42 rc=ERROR criterion_32byte_secret=FAIL
+INV 0043 kind=random #43 rc=ERROR criterion_32byte_secret=FAIL
+INV 0044 kind=random #44 rc=ERROR criterion_32byte_secret=FAIL
+INV 0045 kind=random #45 rc=ERROR criterion_32byte_secret=FAIL
+INV 0046 kind=random #46 rc=ERROR criterion_32byte_secret=FAIL
+INV 0047 kind=random #47 rc=ERROR criterion_32byte_secret=FAIL
+INV 0048 kind=random #48 rc=ERROR criterion_32byte_secret=FAIL
+INV 0049 kind=random #49 rc=ERROR criterion_32byte_secret=FAIL
+INV 0050 kind=random #50 rc=ERROR criterion_32byte_secret=FAIL
+INV 0051 kind=random #51 rc=ERROR criterion_32byte_secret=FAIL
+INV 0052 kind=random #52 rc=ERROR criterion_32byte_secret=FAIL
+INV 0053 kind=random #53 rc=ERROR criterion_32byte_secret=FAIL
+INV 0054 kind=random #54 rc=ERROR criterion_32byte_secret=FAIL
+INV 0055 kind=random #55 rc=ERROR criterion_32byte_secret=FAIL
+INV 0056 kind=random #56 rc=ERROR criterion_32byte_secret=FAIL
+INV 0057 kind=random #57 rc=ERROR criterion_32byte_secret=FAIL
+INV 0058 kind=random #58 rc=ERROR criterion_32byte_secret=FAIL
+INV 0059 kind=random #59 rc=ERROR criterion_32byte_secret=FAIL
+INV 0060 kind=random #60 rc=ERROR criterion_32byte_secret=FAIL
+INV 0061 kind=random #61 rc=ERROR criterion_32byte_secret=FAIL
+INV 0062 kind=random #62 rc=ERROR criterion_32byte_secret=FAIL
+INV 0063 kind=random #63 rc=ERROR criterion_32byte_secret=FAIL
+INV 0064 kind=random #64 rc=ERROR criterion_32byte_secret=FAIL
+INV 0065 kind=random #65 rc=ERROR criterion_32byte_secret=FAIL
+INV 0066 kind=random #66 rc=ERROR criterion_32byte_secret=FAIL
+INV 0067 kind=random #67 rc=ERROR criterion_32byte_secret=FAIL
+INV 0068 kind=random #68 rc=ERROR criterion_32byte_secret=FAIL
+INV 0069 kind=random #69 rc=ERROR criterion_32byte_secret=FAIL
+INV 0070 kind=random #70 rc=ERROR criterion_32byte_secret=FAIL
+INV 0071 kind=random #71 rc=ERROR criterion_32byte_secret=FAIL
+INV 0072 kind=random #72 rc=ERROR criterion_32byte_secret=FAIL
+INV 0073 kind=random #73 rc=ERROR criterion_32byte_secret=FAIL
+INV 0074 kind=random #74 rc=ERROR criterion_32byte_secret=FAIL
+INV 0075 kind=random #75 rc=ERROR criterion_32byte_secret=FAIL
+INV 0076 kind=random #76 rc=ERROR criterion_32byte_secret=FAIL
+INV 0077 kind=random #77 rc=ERROR criterion_32byte_secret=FAIL
+INV 0078 kind=random #78 rc=ERROR criterion_32byte_secret=FAIL
+INV 0079 kind=random #79 rc=ERROR criterion_32byte_secret=FAIL
+INV 0080 kind=random #80 rc=ERROR criterion_32byte_secret=FAIL
+INV 0081 kind=random #81 rc=ERROR criterion_32byte_secret=FAIL
+INV 0082 kind=random #82 rc=ERROR criterion_32byte_secret=FAIL
+INV 0083 kind=random #83 rc=ERROR criterion_32byte_secret=FAIL
+INV 0084 kind=random #84 rc=ERROR criterion_32byte_secret=FAIL
+INV 0085 kind=random #85 rc=ERROR criterion_32byte_secret=FAIL
+INV 0086 kind=random #86 rc=ERROR criterion_32byte_secret=FAIL
+INV 0087 kind=random #87 rc=ERROR criterion_32byte_secret=FAIL
+INV 0088 kind=random #88 rc=ERROR criterion_32byte_secret=FAIL
+INV 0089 kind=random #89 rc=ERROR criterion_32byte_secret=FAIL
+INV 0090 kind=random #90 rc=ERROR criterion_32byte_secret=FAIL
+INV 0091 kind=random #91 rc=ERROR criterion_32byte_secret=FAIL
+INV 0092 kind=random #92 rc=ERROR criterion_32byte_secret=FAIL
+INV 0093 kind=random #93 rc=ERROR criterion_32byte_secret=FAIL
+INV 0094 kind=random #94 rc=ERROR criterion_32byte_secret=FAIL
+INV 0095 kind=random #95 rc=ERROR criterion_32byte_secret=FAIL
+INV 0096 kind=random #96 rc=ERROR criterion_32byte_secret=FAIL
+INV 0097 kind=random #97 rc=ERROR criterion_32byte_secret=FAIL
+INV 0098 kind=random #98 rc=ERROR criterion_32byte_secret=FAIL
+INV 0099 kind=random #99 rc=ERROR criterion_32byte_secret=FAIL
+INV 0100 kind=random #100 rc=ERROR criterion_32byte_secret=FAIL
+INV 0101 kind=random #101 rc=ERROR criterion_32byte_secret=FAIL
+INV 0102 kind=random #102 rc=ERROR criterion_32byte_secret=FAIL
+INV 0103 kind=random #103 rc=ERROR criterion_32byte_secret=FAIL
+INV 0104 kind=random #104 rc=ERROR criterion_32byte_secret=FAIL
+INV 0105 kind=random #105 rc=ERROR criterion_32byte_secret=FAIL
+INV 0106 kind=random #106 rc=ERROR criterion_32byte_secret=FAIL
+INV 0107 kind=random #107 rc=ERROR criterion_32byte_secret=FAIL
+INV 0108 kind=random #108 rc=ERROR criterion_32byte_secret=FAIL
+INV 0109 kind=random #109 rc=ERROR criterion_32byte_secret=FAIL
+INV 0110 kind=random #110 rc=ERROR criterion_32byte_secret=FAIL
+INV 0111 kind=random #111 rc=ERROR criterion_32byte_secret=FAIL
+INV 0112 kind=random #112 rc=ERROR criterion_32byte_secret=FAIL
+INV 0113 kind=random #113 rc=ERROR criterion_32byte_secret=FAIL
+INV 0114 kind=random #114 rc=ERROR criterion_32byte_secret=FAIL
+INV 0115 kind=random #115 rc=ERROR criterion_32byte_secret=FAIL
+INV 0116 kind=random #116 rc=ERROR criterion_32byte_secret=FAIL
+INV 0117 kind=random #117 rc=ERROR criterion_32byte_secret=FAIL
+INV 0118 kind=random #118 rc=ERROR criterion_32byte_secret=FAIL
+INV 0119 kind=random #119 rc=ERROR criterion_32byte_secret=FAIL
+INV 0120 kind=random #120 rc=ERROR criterion_32byte_secret=FAIL
+INV 0121 kind=random #121 rc=ERROR criterion_32byte_secret=FAIL
+INV 0122 kind=random #122 rc=ERROR criterion_32byte_secret=FAIL
+INV 0123 kind=random #123 rc=ERROR criterion_32byte_secret=FAIL
+INV 0124 kind=random #124 rc=ERROR criterion_32byte_secret=FAIL
+INV 0125 kind=random #125 rc=ERROR criterion_32byte_secret=FAIL
+INV 0126 kind=random #126 rc=ERROR criterion_32byte_secret=FAIL
+INV 0127 kind=random #127 rc=ERROR criterion_32byte_secret=FAIL
+INV 0128 kind=random #128 rc=ERROR criterion_32byte_secret=FAIL
+INV 0129 kind=random #129 rc=ERROR criterion_32byte_secret=FAIL
+INV 0130 kind=random #130 rc=ERROR criterion_32byte_secret=FAIL
+INV 0131 kind=random #131 rc=ERROR criterion_32byte_secret=FAIL
+INV 0132 kind=random #132 rc=ERROR criterion_32byte_secret=FAIL
+INV 0133 kind=random #133 rc=ERROR criterion_32byte_secret=FAIL
+INV 0134 kind=random #134 rc=ERROR criterion_32byte_secret=FAIL
+INV 0135 kind=random #135 rc=ERROR criterion_32byte_secret=FAIL
+INV 0136 kind=random #136 rc=ERROR criterion_32byte_secret=FAIL
+INV 0137 kind=random #137 rc=ERROR criterion_32byte_secret=FAIL
+INV 0138 kind=random #138 rc=ERROR criterion_32byte_secret=FAIL
+INV 0139 kind=random #139 rc=ERROR criterion_32byte_secret=FAIL
+INV 0140 kind=random #140 rc=ERROR criterion_32byte_secret=FAIL
+INV 0141 kind=random #141 rc=ERROR criterion_32byte_secret=FAIL
+INV 0142 kind=random #142 rc=ERROR criterion_32byte_secret=FAIL
+INV 0143 kind=random #143 rc=ERROR criterion_32byte_secret=FAIL
+INV 0144 kind=random #144 rc=ERROR criterion_32byte_secret=FAIL
+INV 0145 kind=random #145 rc=ERROR criterion_32byte_secret=FAIL
+INV 0146 kind=random #146 rc=ERROR criterion_32byte_secret=FAIL
+INV 0147 kind=random #147 rc=ERROR criterion_32byte_secret=FAIL
+INV 0148 kind=random #148 rc=ERROR criterion_32byte_secret=FAIL
+INV 0149 kind=random #149 rc=ERROR criterion_32byte_secret=FAIL
+INV 0150 kind=random #150 rc=ERROR criterion_32byte_secret=FAIL
+INV 0151 kind=random #151 rc=ERROR criterion_32byte_secret=FAIL
+INV 0152 kind=random #152 rc=ERROR criterion_32byte_secret=FAIL
+INV 0153 kind=random #153 rc=ERROR criterion_32byte_secret=FAIL
+INV 0154 kind=random #154 rc=ERROR criterion_32byte_secret=FAIL
+INV 0155 kind=random #155 rc=ERROR criterion_32byte_secret=FAIL
+INV 0156 kind=random #156 rc=ERROR criterion_32byte_secret=FAIL
+INV 0157 kind=random #157 rc=ERROR criterion_32byte_secret=FAIL
+INV 0158 kind=random #158 rc=ERROR criterion_32byte_secret=FAIL
+INV 0159 kind=random #159 rc=ERROR criterion_32byte_secret=FAIL
+INV 0160 kind=random #160 rc=ERROR criterion_32byte_secret=FAIL
+INV 0161 kind=random #161 rc=ERROR criterion_32byte_secret=FAIL
+INV 0162 kind=random #162 rc=ERROR criterion_32byte_secret=FAIL
+INV 0163 kind=random #163 rc=ERROR criterion_32byte_secret=FAIL
+INV 0164 kind=random #164 rc=ERROR criterion_32byte_secret=FAIL
+INV 0165 kind=random #165 rc=ERROR criterion_32byte_secret=FAIL
+INV 0166 kind=random #166 rc=ERROR criterion_32byte_secret=FAIL
+INV 0167 kind=random #167 rc=ERROR criterion_32byte_secret=FAIL
+INV 0168 kind=random #168 rc=ERROR criterion_32byte_secret=FAIL
+INV 0169 kind=random #169 rc=ERROR criterion_32byte_secret=FAIL
+INV 0170 kind=random #170 rc=ERROR criterion_32byte_secret=FAIL
+INV 0171 kind=random #171 rc=ERROR criterion_32byte_secret=FAIL
+INV 0172 kind=random #172 rc=ERROR criterion_32byte_secret=FAIL
+INV 0173 kind=random #173 rc=ERROR criterion_32byte_secret=FAIL
+INV 0174 kind=random #174 rc=ERROR criterion_32byte_secret=FAIL
+INV 0175 kind=random #175 rc=ERROR criterion_32byte_secret=FAIL
+INV 0176 kind=random #176 rc=ERROR criterion_32byte_secret=FAIL
+INV 0177 kind=random #177 rc=ERROR criterion_32byte_secret=FAIL
+INV 0178 kind=random #178 rc=ERROR criterion_32byte_secret=FAIL
+INV 0179 kind=random #179 rc=ERROR criterion_32byte_secret=FAIL
+INV 0180 kind=random #180 rc=ERROR criterion_32byte_secret=FAIL
+INV 0181 kind=random #181 rc=ERROR criterion_32byte_secret=FAIL
+INV 0182 kind=random #182 rc=ERROR criterion_32byte_secret=FAIL
+INV 0183 kind=random #183 rc=ERROR criterion_32byte_secret=FAIL
+INV 0184 kind=random #184 rc=ERROR criterion_32byte_secret=FAIL
+INV 0185 kind=random #185 rc=ERROR criterion_32byte_secret=FAIL
+INV 0186 kind=random #186 rc=ERROR criterion_32byte_secret=FAIL
+INV 0187 kind=random #187 rc=ERROR criterion_32byte_secret=FAIL
+INV 0188 kind=random #188 rc=ERROR criterion_32byte_secret=FAIL
+INV 0189 kind=random #189 rc=ERROR criterion_32byte_secret=FAIL
+INV 0190 kind=random #190 rc=ERROR criterion_32byte_secret=FAIL
+INV 0191 kind=random #191 rc=ERROR criterion_32byte_secret=FAIL
+INV 0192 kind=random #192 rc=ERROR criterion_32byte_secret=FAIL
+INV 0193 kind=random #193 rc=ERROR criterion_32byte_secret=FAIL
+INV 0194 kind=random #194 rc=ERROR criterion_32byte_secret=FAIL
+INV 0195 kind=random #195 rc=ERROR criterion_32byte_secret=FAIL
+INV 0196 kind=random #196 rc=ERROR criterion_32byte_secret=FAIL
+INV 0197 kind=random #197 rc=ERROR criterion_32byte_secret=FAIL
+INV 0198 kind=random #198 rc=ERROR criterion_32byte_secret=FAIL
+INV 0199 kind=random #199 rc=ERROR criterion_32byte_secret=FAIL
+INV 0200 kind=1bit byte=0 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0201 kind=1bit byte=0 bit=7 rc=ERROR criterion_32byte_secret=FAIL
+INV 0202 kind=1bit byte=1 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0203 kind=1bit byte=1 bit=7 rc=ERROR criterion_32byte_secret=FAIL
+INV 0204 kind=1bit byte=2 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0205 kind=1bit byte=2 bit=7 rc=ERROR criterion_32byte_secret=FAIL
+INV 0206 kind=1bit byte=3 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0207 kind=1bit byte=3 bit=7 rc=ERROR criterion_32byte_secret=FAIL
+INV 0208 kind=1bit byte=7 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0209 kind=1bit byte=7 bit=7 rc=ERROR criterion_32byte_secret=FAIL
+INV 0210 kind=1bit byte=15 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0211 kind=1bit byte=15 bit=7 rc=ERROR criterion_32byte_secret=FAIL
+INV 0212 kind=1bit byte=31 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0213 kind=1bit byte=31 bit=7 rc=ERROR criterion_32byte_secret=FAIL
+INV 0214 kind=1bit byte=63 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0215 kind=1bit byte=63 bit=7 rc=ERROR criterion_32byte_secret=FAIL
+INV 0216 kind=1bit byte=127 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0217 kind=1bit byte=127 bit=7 rc=ERROR criterion_32byte_secret=FAIL
+INV 0218 kind=1bit byte=255 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0219 kind=1bit byte=255 bit=7 rc=ERROR criterion_32byte_secret=FAIL
+INV 0220 kind=1bit byte=511 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0221 kind=1bit byte=511 bit=7 rc=ERROR criterion_32byte_secret=FAIL
+INV 0222 kind=1bit byte=544 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0223 kind=1bit byte=544 bit=7 rc=ERROR criterion_32byte_secret=FAIL
+INV 0224 kind=1bit byte=1085 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0225 kind=1bit byte=1085 bit=7 rc=ERROR criterion_32byte_secret=FAIL
+INV 0226 kind=1bit byte=1086 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0227 kind=1bit byte=1086 bit=7 rc=ERROR criterion_32byte_secret=FAIL
+INV 0228 kind=1bit byte=1087 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0229 kind=1bit byte=1087 bit=7 rc=ERROR criterion_32byte_secret=FAIL
+INV 0230 kind=1bit byte=4 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0231 kind=1bit byte=5 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0232 kind=1bit byte=6 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0233 kind=1bit byte=8 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0234 kind=1bit byte=9 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0235 kind=1bit byte=10 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0236 kind=1bit byte=11 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0237 kind=1bit byte=12 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0238 kind=1bit byte=13 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0239 kind=1bit byte=14 bit=0 rc=ERROR criterion_32byte_secret=FAIL
+INV 0240 kind=multibit byte0=0xFF rc=ERROR criterion_32byte_secret=FAIL
+INV 0241 kind=multibit bytes100-107=0xFF rc=ERROR criterion_32byte_secret=FAIL
+INV 0242 kind=multibit 8 scattered bits rc=ERROR criterion_32byte_secret=FAIL
+INV 0243 kind=multibit first+last byte 0xFF rc=ERROR criterion_32byte_secret=FAIL
+INV 0244 kind=all-zero rc=ERROR criterion_32byte_secret=FAIL
+INV 0245 kind=all-0xFF rc=ERROR criterion_32byte_secret=FAIL
+oracle_battery_summary: n=246 pass=0 fail=246
+RESULT: FAIL oracle ML-KEM-768 pass=0/246 (explicit rejection fails the FIPS 203 7.3 battery by design)

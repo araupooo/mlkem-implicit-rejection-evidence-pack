@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ML-KEM Implicit-Rejection Evidence — Findings</title>
+<style>
+body { font-family: system-ui, sans-serif; max-width: 960px; margin: 2em auto; padding: 0 1em; line-height: 1.5; color: #1a1a1a; }
+h1 { font-size: 1.6em; } h2 { font-size: 1.25em; margin-top: 2em; border-bottom: 1px solid #ccc; padding-bottom: .2em; }
+table { border-collapse: collapse; margin: 1em 0; font-size: .92em; }
+th, td { border: 1px solid #bbb; padding: .35em .6em; text-align: left; }
+th { background: #f0f0f0; } td.num { text-align: right; font-variant-numeric: tabular-nums; }
+code { background: #f4f4f4; padding: 0 .25em; }
+.pass { color: #0a6b0a; font-weight: bold; }
+.sev-info { background: #e8f4e8; } .sev-low { background: #fff4d6; }
+.small { font-size: .85em; color: #444; }
+</style>
+</head>
+<body>
+<h1>ML-KEM Implicit-Rejection Evidence — Findings</h1>
+<p class="small">Pinned builds: liboqs 0.16.0, reference (<code>OQS_OPT_TARGET=generic</code>) and
+optimized (<code>OQS_OPT_TARGET=auto</code>, AVX2). Parameter sets: ML-KEM-512, ML-KEM-768,
+ML-KEM-1024. Machine: Intel Xeon Platinum 8321HC @ 1.40 GHz, 4 vCPU, Ubuntu 24.04.
+Methodology: <a href="methodology.md">docs/methodology.md</a>. Claims → evidence:
+<a href="evidence-index.md">docs/evidence-index.md</a>. All numbers are from the
+unedited logs in <code>outputs/</code>.</p>
+
+<h2>Headline result</h2>
+<p><span class="pass">PASS — no deviation from FIPS 203 §7.3 found in either pinned build.</span>
+1,476 invalid-ciphertext decapsulations (246 per parameter set × 3 sets × 2 builds)
+all returned a deterministic 32-byte fallback secret, never an error, never the
+valid shared secret. Fallback values are bit-identical across the two builds.
+The re-encryption check was observed directly for ML-KEM-768: 33 of 46
+single-bit-flipped ciphertexts decrypt to the same message as the valid
+ciphertext, yet decapsulation returns the fallback — the rejection comes solely
+from the re-encryption comparison.</p>
+
+<h2>Table 1 — Invalid-ciphertext battery (per parameter set, per build)</h2>
+<p>246 unique invalid ciphertexts each: 200 random, 30 single-bit flips at spread
+positions, 10 additional bit-0 flips (bytes 0–15), 4 multi-bit flips, all-zero,
+all-0xFF. Valid round-trip and size checks pass in every run. Full per-case
+fallback values: <code>outputs/battery-*.log</code>.</p>
+<table>
+<tr><th>Parameter set</th><th>Build</th><th class="num">Invalid cts</th><th class="num">Errors (rc_fail)</th><th class="num">Non-deterministic (det_fail)</th><th class="num">Fallback == valid K (eqK)</th><th class="num">Duplicate fallbacks</th><th>Result</th></tr>
+<tr><td>ML-KEM-512</td><td>reference</td><td class="num">246</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="pass">PASS</td></tr>
+<tr><td>ML-KEM-512</td><td>optimized</td><td class="num">246</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="pass">PASS</td></tr>
+<tr><td>ML-KEM-768</td><td>reference</td><td class="num">246</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="pass">PASS</td></tr>
+<tr><td>ML-KEM-768</td><td>optimized</td><td class="num">246</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="pass">PASS</td></tr>
+<tr><td>ML-KEM-1024</td><td>reference</td><td class="num">246</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="pass">PASS</td></tr>
+<tr><td>ML-KEM-1024</td><td>optimized</td><td class="num">246</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="pass">PASS</td></tr>
+</table>
+<p class="small">Determinism: the ML-KEM-768 reference battery run twice produces
+bit-identical logs except the timestamp line (<code>outputs/diff-run1-run2.txt</code>
+is empty). Cross-build: fallback values are bit-identical between reference and
+optimized for all three parameter sets (<code>outputs/diff-ref-opt-*.txt</code> are
+empty). Sizes match FIPS 203 Table 3 in all runs (512: 800/1632/768; 768:
+1184/2400/1088; 1024: 1568/3168/1568; shared secret 32 bytes).</p>
+
+<h2>Table 2 — Re-encryption-check observation (ML-KEM-768, reference sources)</h2>
+<p>Internal-API replay of the <code>mlk_kem_dec</code> steps (FIPS 203 §7.3) over
+unmodified mlkem-native reference sources. Self-check first: for the valid
+ciphertext, re-encryption reproduces the ciphertext (<code>c' == ct</code>) and the
+recomputed key equals the public-API shared secret (<code>Kbar == K</code>).
+Log: <code>outputs/reenc-observation-ml-kem-768-reference.log</code>.</p>
+<table>
+<tr><th>Single-bit flips tested</th><th class="num">46</th></tr>
+<tr><td>Flips where the decrypted message is <b>unchanged</b> from the valid ciphertext's message</td><td class="num">33</td></tr>
+<tr><td>Of those, flips where decapsulation still returns the fallback (rejection from the re-encryption comparison alone)</td><td class="num">33</td></tr>
+<tr><td>Flips where the decrypted message changed (rejection via changed message → changed re-encryption)</td><td class="num">13</td></tr>
+</table>
+<p class="small">For every same-message flip, re-encryption reproduces the <i>original</i>
+ciphertext (<code>c' == ct0</code>) and differs from the flipped ciphertext
+(<code>c' != ct_flip</code>), so the only deciding step is the comparison
+<code>fail = ct_memcmp(ct, c')</code>. This is the direct observation of the
+re-encryption check path. Coverage: ML-KEM-768 reference sources only; 512/1024
+and the AVX2 path are covered by the public-API battery and cross-build
+fallback equality.</p>
+
+<h2>Table 3 — Failure-handling timing (ns per decapsulation, N = 20,000 each)</h2>
+<p>Interleaved valid/invalid pairs (order swapped on odd iterations) plus blocked
+runs. Invalid ciphertext: single-bit flip, byte 0. Raw per-call data:
+<code>outputs/timing-*.csv</code>.</p>
+<table>
+<tr><th>Parameter set</th><th>Build</th><th>Mode</th><th class="num">Valid median</th><th class="num">Invalid median</th><th class="num">Median gap</th><th class="num">Valid mean</th><th class="num">Invalid mean</th><th class="num">Valid stddev</th><th class="num">Invalid stddev</th></tr>
+<tr><td>ML-KEM-512</td><td>reference</td><td>interleaved</td><td class="num">85,002</td><td class="num">85,047</td><td class="num">45</td><td class="num">214,611</td><td class="num">190,702</td><td class="num">2,509,931</td><td class="num">2,247,219</td></tr>
+<tr><td>ML-KEM-512</td><td>reference</td><td>blocked</td><td class="num">85,044</td><td class="num">85,065</td><td class="num">21</td><td class="num">198,628</td><td class="num">207,345</td><td class="num">2,320,653</td><td class="num">2,398,965</td></tr>
+<tr><td>ML-KEM-512</td><td>optimized</td><td>interleaved</td><td class="num">23,187</td><td class="num">23,186</td><td class="num">1</td><td class="num">44,408</td><td class="num">65,473</td><td class="num">950,208</td><td class="num">1,423,660</td></tr>
+<tr><td>ML-KEM-512</td><td>optimized</td><td>blocked</td><td class="num">23,213</td><td class="num">23,251</td><td class="num">38</td><td class="num">54,393</td><td class="num">51,499</td><td class="num">1,249,033</td><td class="num">1,169,282</td></tr>
+<tr><td>ML-KEM-768</td><td>reference</td><td>interleaved</td><td class="num">133,192</td><td class="num">133,154</td><td class="num">38</td><td class="num">364,332</td><td class="num">339,416</td><td class="num">3,254,886</td><td class="num">2,982,782</td></tr>
+<tr><td>ML-KEM-768</td><td>reference</td><td>blocked</td><td class="num">132,684</td><td class="num">132,484</td><td class="num">200</td><td class="num">331,229</td><td class="num">304,298</td><td class="num">3,031,276</td><td class="num">2,924,368</td></tr>
+<tr><td>ML-KEM-768</td><td>optimized</td><td>interleaved</td><td class="num">38,258</td><td class="num">38,262</td><td class="num">4</td><td class="num">90,508</td><td class="num">90,309</td><td class="num">1,598,779</td><td class="num">1,602,216</td></tr>
+<tr><td>ML-KEM-768</td><td>optimized</td><td>blocked</td><td class="num">38,354</td><td class="num">38,372</td><td class="num">18</td><td class="num">99,419</td><td class="num">96,526</td><td class="num">1,665,940</td><td class="num">1,600,632</td></tr>
+<tr><td>ML-KEM-1024</td><td>reference</td><td>interleaved</td><td class="num">182,823</td><td class="num">182,744</td><td class="num">79</td><td class="num">463,271</td><td class="num">451,362</td><td class="num">3,514,488</td><td class="num">3,424,698</td></tr>
+<tr><td>ML-KEM-1024</td><td>reference</td><td>blocked</td><td class="num">182,261</td><td class="num">182,274</td><td class="num">13</td><td class="num">433,394</td><td class="num">434,775</td><td class="num">3,401,576</td><td class="num">3,443,061</td></tr>
+<tr><td>ML-KEM-1024</td><td>optimized</td><td>interleaved</td><td class="num">50,582</td><td class="num">50,572</td><td class="num">10</td><td class="num">107,393</td><td class="num">126,585</td><td class="num">1,612,394</td><td class="num">1,909,607</td></tr>
+<tr><td>ML-KEM-1024</td><td>optimized</td><td>blocked</td><td class="num">50,683</td><td class="num">50,710</td><td class="num">27</td><td class="num">118,227</td><td class="num">120,074</td><td class="num">1,791,358</td><td class="num">1,841,162</td></tr>
+</table>
+<p>Encapsulation medians for scale (same runs): 512 ref 71,397 ns / opt 20,594 ns;
+768 ref 113,747 ns / opt 33,317 ns; 1024 ref 160,517 ns / opt 43,009 ns.
+Optimized decapsulation is ~3.5–3.9× faster than reference, as expected with AVX2.</p>
+<p class="small"><b>Reading the table:</b> the largest median gap is 79 ns (0.04%,
+ML-KEM-1024 reference, interleaved) — far below the noise floor. Means and
+standard deviations are dominated by occasional VM scheduling spikes (maxima up
+to ~68 ms); the medians are the robust comparison. <b>Noise disclosure:</b> this
+timing run executed concurrently with the clean-reproduction build (two liboqs
+builds competing for the same 4 vCPUs), which inflates the outlier tail. An
+earlier quiet-machine run gave medians within 1% of these values. Conclusion:
+<b>no valid-vs-invalid timing difference is detectable above the noise floor</b>;
+this is not a proof that no sub-noise-floor difference exists.</p>
+
+<h2>Table 4 — Before / after case (controlled experiment)</h2>
+<p>Both pinned builds behave correctly, so the before/after case is a controlled
+experiment with a test oracle — <b>not</b> a real implementation bug. The oracle
+implements explicit rejection (returns an error and no secret for any ciphertext
+other than the known valid one), which FIPS 203 §7.3 forbids.</p>
+<table>
+<tr><th>Side</th><th>Subject</th><th class="num">Battery pass</th><th>Log</th></tr>
+<tr><td>BEFORE</td><td>Explicit-rejection test oracle (ML-KEM-768)</td><td class="num">0 / 246</td><td><code>outputs/oracle-ml-kem-768.log</code></td></tr>
+<tr><td>AFTER</td><td>liboqs 0.16.0 reference (ML-KEM-768)</td><td class="num">246 / 246</td><td><code>outputs/battery-ml-kem-768-reference.log</code></td></tr>
+<tr><td>AFTER</td><td>liboqs 0.16.0 optimized (ML-KEM-768)</td><td class="num">246 / 246</td><td><code>outputs/battery-ml-kem-768-optimized.log</code></td></tr>
+</table>
+
+<h2>Findings (severity-rated)</h2>
+<table>
+<tr><th>ID</th><th>Severity</th><th>Finding</th><th>Remediation / guidance</th></tr>
+<tr class="sev-info"><td>F1</td><td>Informational</td><td>No deviation from FIPS 203 §7.3 in either pinned build: implicit rejection behaves as specified on all 1,476 invalid-ciphertext decapsulations tested.</td><td>None required. Keep the battery as a regression test when upgrading liboqs or changing build flags.</td></tr>
+<tr class="sev-info"><td>F2</td><td>Informational</td><td>Fallback determinism and distinctness hold exactly, including bit-identical fallback values across the reference and optimized builds.</td><td>None required. Cross-build fallback equality is a cheap, strong regression signal for future builds.</td></tr>
+<tr class="sev-low"><td>F3</td><td>Low</td><td>Failure-handling timing: no valid-vs-invalid difference detectable above the noise floor on this machine (largest median gap 79 ns, 0.04%). The measurement cannot rule out a sub-noise-floor leak.</td><td>None required for this finding. Before any timing-sensitive deployment claim, re-measure on quiet, dedicated hardware with cycle-accurate counters; do not rely on wall-clock medians from a shared VM.</td></tr>
+<tr class="sev-info"><td>F4</td><td>Informational</td><td>The public <code>OQS_KEM_decaps</code> API takes a fixed-length ciphertext, so truncated/malformed-length inputs cannot be tested at this layer.</td><td>Length validation, if any, lives in the caller. Document that callers must pass exactly <code>length_ciphertext</code> bytes.</td></tr>
+<tr class="sev-info"><td>F5</td><td>Informational</td><td>Explicit rejection (returning an error on invalid ciphertext) would break the KEM contract and leak ciphertext validity; the oracle demonstrates the failure mode.</td><td>Implementers: always return <code>J(z || c)</code> for a failed re-encryption check; never branch on validity in a caller-visible way. The oracle in <code>src/explicit_rejection_oracle.c</code> shows what not to do.</td></tr>
+</table>
+
+<h2>Limitations</h2>
+<ul>
+<li><b>L1 — Empirical only:</b> fallback pseudorandomness is checked by distinctness over 246 inputs per parameter set and determinism over two runs, not proven; no statistical test suite (e.g. NIST SP 800-22) was run on fallback outputs.</li>
+<li><b>L2 — Timing noise:</b> single shared virtual machine; the shipped timing run competed with a concurrent build. Differences below the noise floor are reported as <i>not detectable</i>, not <i>proven absent</i>.</li>
+<li><b>L3 — Constant-time by inspection:</b> the constant-time comparison (<code>mlk_ct_memcmp</code>) and move (<code>mlk_ct_cmov_zero</code>) are verified by code inspection of the pinned source, not by a side-channel measurement.</li>
+<li><b>L4 — Observation scope:</b> the re-encryption observation covers ML-KEM-768 reference sources only; 512/1024 and the AVX2 path are covered by the public-API battery and cross-build fallback equality.</li>
+<li><b>L5 — Length inputs:</b> truncated/malformed-length ciphertexts cannot be passed through the public API and were not tested.</li>
+</ul>
+
+<h2>Primary sources</h2>
+<ul>
+<li>FIPS 203, <i>Module-Lattice-Based Key-Encapsulation Mechanism Standard</i>, NIST,
+<a href="https://csrc.nist.gov/pubs/fips/203/final">csrc.nist.gov/pubs/fips/203/final</a> — §7.3 ML-KEM.Decaps (implicit rejection, re-encryption check), Table 3 (sizes), Algorithms 14/15 (K-PKE.Encrypt/Decrypt).</li>
+<li>liboqs 0.16.0, <code>docs/algorithms/kem/ml_kem.yml</code> — ML-KEM standardized by NIST (FIPS 203), upstream mlkem-native commit <code>0ba906cb14b1c241476134d7403a811b382ca498</code>, parameter-set sizes.</li>
+<li>liboqs 0.16.0 source: <code>src/kem/ml_kem/mlkem-native_ml-kem-768_ref/mlkem/src/kem.c</code> (<code>mlk_kem_dec</code>), <code>indcpa.h</code>, <code>symmetric.h</code> (<code>G</code> = SHA3-512, <code>J</code> = SHAKE-256, <code>H</code> = SHA3-256).</li>
+</ul>
+<p class="small">Reproduce: <code>scripts/run_all.sh</code> (full run),
+<code>scripts/clean_reproduce.sh</code> (fresh copy, rebuilds both liboqs
+configurations and re-runs the ML-KEM-768 battery + observation),
+<code>scripts/verify_digests.sh</code> (SHA256SUMS over all pack files).
+Run manifest: <code>outputs/run-manifest.md</code>.</p>
+</body>
+</html>
